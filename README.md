@@ -1,1 +1,1 @@
-# multi-cloud-management-and-security
+# multi-cloud-security-management
