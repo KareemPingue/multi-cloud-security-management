@@ -1,0 +1,45 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+dist/
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+.DS_Store
+
+# Vite (React.js)
+.vite/
+.vscode/
+.idea/
+*.log
+*.lock
+public/
+coverage/
+build/
+out/
+*.swp
+*.swo
+
+# Redis
+dump.rdb
+appendonly.aof
+
+# Terraform
+*.tfstate
+*.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+
+# Git
+.git/
+*.log
+
+# Cache
+/UsersisolaAppDataLocalnpm-cache
+/backend/UsersisolaAppDataLocalnpm-cache
+/frontend/UsersisolaAppDataLocalnpm-cache
