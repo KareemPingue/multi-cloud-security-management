@@ -1,1 +1,0 @@
-{"revision":"","roots":[""],"wasm":[{"entrypoint":"example/allow","module":"/policy.wasm"}],"rego_version":1}

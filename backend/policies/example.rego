@@ -1,7 +1,13 @@
+# opa build -t wasm -e example/allow example.rego
+# paste the above into bash console when in the '../backend/policies/' directory.
+
 package example
 
-import data.example.allow
+allow if {
+    input.method == "GET"
+}
 
 deny if {
-	input.role == "user"
+    input.method == "POST"
 }
+
