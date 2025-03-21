@@ -1,0 +1,8 @@
+com\mcsm\iam\services\AwsIamService.class
+com\mcsm\iam\services\IamDataService.class
+com\mcsm\iam\App.class
+com\mcsm\iam\services\GcpIamService.class
+com\mcsm\iam\services\AzureIamService.class
+com\mcsm\iam\controllers\IamController.class
+com\mcsm\iam\models\IamUser.class
+com\mcsm\iam\models\IamRole.class

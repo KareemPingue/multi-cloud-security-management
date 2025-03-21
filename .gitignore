@@ -43,3 +43,6 @@ appendonly.aof
 /UsersisolaAppDataLocalnpm-cache
 /backend/UsersisolaAppDataLocalnpm-cache
 /frontend/UsersisolaAppDataLocalnpm-cache
+
+# Other
+*clear*.json

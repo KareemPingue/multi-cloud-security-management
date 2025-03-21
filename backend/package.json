@@ -10,12 +10,15 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@google-cloud/iam": "^2.0.0",
+    "@google-cloud/storage": "^7.15.2",
     "@open-policy-agent/opa-wasm": "^1.10.0",
     "@redis/client": "^1.6.0",
     "axios": "^1.8.3",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "redis": "^4.7.0",
+    "tar-stream": "^3.1.7",
     "terraform": "^1.23.0"
   }
 }
