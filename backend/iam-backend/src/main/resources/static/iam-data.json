@@ -1,0 +1,11 @@
+{
+    "roles": [
+        { "roleName": "Admin", "cloudProvider": "AWS", "permissions": ["iam:CreateUser", "iam:DeleteUser"] },
+        { "roleName": "Developer", "cloudProvider": "GoogleCloud", "permissions": ["compute:StartInstance", "compute:StopInstance"] },
+        { "roleName": "Security", "cloudProvider": "Azure", "permissions": ["security:MonitorThreats", "security:BlockIP"] }
+    ],
+    "users": [
+        { "username": "alice", "role": "Admin" },
+        { "username": "bob", "role": "Developer" }
+    ]
+}

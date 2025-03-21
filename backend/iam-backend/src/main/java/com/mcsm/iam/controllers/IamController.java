@@ -1,29 +1,28 @@
-package com.mcsm.iam.controllers;
+package com.mcsm.iam.controller;
 
-import com.mcsm.iam.services.AwsIamService;
-import com.mcsm.iam.services.GcpIamService;
-import com.mcsm.iam.services.AzureIamService;
-import org.springframework.web.bind.annotation.*;
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.mcsm.iam.model.IamPolicy;
+import com.mcsm.iam.service.IamService;
 
 @RestController
 @RequestMapping("/iam")
 public class IamController {
-    private final AwsIamService awsIamService = new AwsIamService();
-    private final GcpIamService gcpIamService = new GcpIamService();
-    private final AzureIamService azureIamService = new AzureIamService();
+    private final IamService iamService = new IamService();
 
-    @PostMapping("/aws/create-user/{username}")
-    public String createAwsUser(@PathVariable String username) {
-        return awsIamService.createUser(username);
+    @GetMapping("/users")
+    public List<String> getUsers() {
+        return iamService.getUsers().stream().map(user -> user.getUsername()).toList();
     }
 
-    @PostMapping("/gcp/start-instance/{instanceId}")
-    public String startGcpInstance(@PathVariable String instanceId) {
-        return gcpIamService.startInstance(instanceId);
-    }
-
-    @PostMapping("/azure/block-ip/{ip}")
-    public String blockAzureIP(@PathVariable String ip) {
-        return azureIamService.blockIP(ip);
+    @GetMapping("/policy/{role}")
+    public Optional<IamPolicy> getPolicyForRole(@PathVariable String role) {
+        return iamService.getPolicyForRole(role);
     }
 }

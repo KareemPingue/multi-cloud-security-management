@@ -1,0 +1,14 @@
+[
+    {
+        "role": "admin",
+        "permissions": ["create_user", "delete_user", "assign_role"]
+    },
+    {
+        "role": "developer",
+        "permissions": ["deploy_code", "read_logs"]
+    },
+    {
+        "role": "viewer",
+        "permissions": ["view_logs"]
+    }
+]
