@@ -16,6 +16,24 @@ The project is structured into backend and frontend directories. The backend, bu
 *   **CLI & API Support:** Offers a command-line interface (CLI) and REST API for managing security policies.
 *   **Caching with Redis:** Optimizes policy lookups and enhances performance.
 
+## UI Design
+
+### Dashboard
+
+![image](https://github.com/user-attachments/assets/32442fc0-259f-499c-80c1-8eb68d8e12a4)
+
+### Policy
+
+![image](https://github.com/user-attachments/assets/37304f15-6c95-4436-8c1e-12e53a4a6db5)
+
+### Users
+
+![image](https://github.com/user-attachments/assets/793d82d9-f058-47c7-bc5b-4115abeac903)
+
+### Audit Logs
+
+![image](https://github.com/user-attachments/assets/77338145-93d1-4231-be85-22654c8d3ee8)
+
 ## Technology Stack
 
 ### Frontend
