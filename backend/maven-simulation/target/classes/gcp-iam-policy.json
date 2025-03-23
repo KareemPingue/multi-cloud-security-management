@@ -1,0 +1,13 @@
+{
+    "policies": [
+      {
+        "user": "admin",
+        "allowedActions": ["compute.instances.start", "compute.instances.stop"]
+      },
+      {
+        "user": "developer",
+        "allowedActions": ["compute.instances.view"]
+      }
+    ]
+  }
+  

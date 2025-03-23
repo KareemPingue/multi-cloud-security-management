@@ -1,11 +1,12 @@
 {
-    "roles": [
-        { "roleName": "Admin", "cloudProvider": "AWS", "permissions": ["iam:CreateUser", "iam:DeleteUser"] },
-        { "roleName": "Developer", "cloudProvider": "GoogleCloud", "permissions": ["compute:StartInstance", "compute:StopInstance"] },
-        { "roleName": "Security", "cloudProvider": "Azure", "permissions": ["security:MonitorThreats", "security:BlockIP"] }
-    ],
     "users": [
-        { "username": "alice", "role": "Admin" },
-        { "username": "bob", "role": "Developer" }
-    ]
+        { "id": "1", "name": "Alice", "role": "admin", "cloud": "AWS" },
+        { "id": "2", "name": "Bob", "role": "developer", "cloud": "GCP" },
+        { "id": "3", "name": "Charlie", "role": "developer", "cloud": "Azure" }
+    ],
+    "policies": {
+        "AWS": { "admin": "Full access", "developer": "Limited access to EC2 and S3" },
+        "GCP": { "admin": "Full access", "developer": "Limited access to compute and storage" },
+        "Azure": { "admin": "Full access", "developer": "Limited access to databases and networking" }
+    }
 }

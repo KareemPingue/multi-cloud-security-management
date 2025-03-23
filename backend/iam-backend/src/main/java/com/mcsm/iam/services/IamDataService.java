@@ -1,28 +1,23 @@
 package com.mcsm.iam.services;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import java.io.File;
-import java.io.IOException;
-import java.util.List;
+import com.mcsm.iam.util.RedisCache;
 
 public class IamDataService {
-    private static final String DATA_PATH = "src/main/resources/static/iam-data.json";
-    private JsonNode rootNode;
+    private RedisCache cache;
 
     public IamDataService() {
-        loadData();
+        this.cache = new RedisCache("localhost", 6379);
     }
 
-    private void loadData() {
-        ObjectMapper objectMapper = new ObjectMapper();
-        try {
-            rootNode = objectMapper.readTree(new File(DATA_PATH));
-        } catch (IOException e) {
-            throw new RuntimeException("Error loading IAM data: " + e.getMessage());
-        }
+    public void storeUserPolicy(String userId, String policyJson) {
+        cache.set("policy:" + userId, policyJson);
     }
 
-    public JsonNode getRoles() { return rootNode.get("roles"); }
-    public JsonNode getUsers() { return rootNode.get("users"); }
+    public String getUserPolicy(String userId) {
+        return cache.get("policy:" + userId);
+    }
+
+    public void clearUserPolicy(String userId) {
+        cache.delete("policy:" + userId);
+    }
 }

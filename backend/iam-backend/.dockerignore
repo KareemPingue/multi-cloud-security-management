@@ -1,0 +1,7 @@
+target/
+*.jar
+*.class
+.env.aws
+.env.azure
+.env.gcp
+.idea/
