@@ -4,10 +4,6 @@
 
 Multi-Cloud Security Management (MCSM) is a system designed to streamline security policy enforcement across AWS, Azure, and Google Cloud. The project provides a unified interface for managing IAM policies, simulating cloud security configurations, and automating policy enforcement using OPA and Redis for caching.
 
-## Project Structure
-
-The project is structured into backend and frontend directories. The backend, built with Java (Spring Boot) and Node.js (Express.js), includes services for IAM policy enforcement across AWS, Azure, and Google Cloud. It contains modules for policy evaluation (OPA), caching (Redis), and CLI interaction. The frontend, generated with Lovable, is a React.js application managing cloud security settings. The Maven simulation directory mimics cloud SDK interactions locally, while the policies folder stores predefined security rules.
-
 ## Features
 
 *   **Cross-Cloud IAM Policy Management:** Simulates AWS, Azure, and Google Cloud IAM policies without requiring actual cloud SDK calls.
@@ -33,6 +29,10 @@ The project is structured into backend and frontend directories. The backend, bu
 ### Audit Logs
 
 ![image](https://github.com/user-attachments/assets/77338145-93d1-4231-be85-22654c8d3ee8)
+
+## Project Structure
+
+The project is structured into backend and frontend directories. The backend, built with Java (Spring Boot) and Node.js (Express.js), includes services for IAM policy enforcement across AWS, Azure, and Google Cloud. It contains modules for policy evaluation (OPA), caching (Redis), and CLI interaction. The frontend, generated with Lovable, is a React.js application managing cloud security settings. The Maven simulation directory mimics cloud SDK interactions locally, while the policies folder stores predefined security rules.
 
 ## Technology Stack
 
