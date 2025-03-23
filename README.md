@@ -14,6 +14,8 @@ Multi-Cloud Security Management (MCSM) is a system designed to streamline securi
 
 ## UI Design
 
+This is a CRUD app featuring user authentication, file uploads, and customizable settings. To maintain brevity, I'll focus on the core functionalities.
+
 ### Dashboard
 
 ![image](https://github.com/user-attachments/assets/32442fc0-259f-499c-80c1-8eb68d8e12a4)
