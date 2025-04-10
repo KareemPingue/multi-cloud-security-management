@@ -34,7 +34,7 @@ This is a CRUD app featuring user authentication, file uploads, and customizable
 
 ## Project Structure
 
-The project is structured into backend and frontend directories. The backend, built with Java (Spring Boot) and Node.js (Express.js), includes services for IAM policy enforcement across AWS, Azure, and Google Cloud. It contains modules for policy evaluation (OPA), caching (Redis), and CLI interaction. The frontend, generated with Lovable, is a React.js application managing cloud security settings. The Maven simulation directory mimics cloud SDK interactions locally, while the policies folder stores predefined security rules.
+The project is structured into backend and frontend directories. The backend, built with Java (Spring Boot) and Node.js (Express.js), includes services for IAM policy enforcement across AWS, Azure, and Google Cloud. It contains modules for policy evaluation (OPA), caching (Redis), and CLI interaction. The frontend is a React.js application managing cloud security settings. The Maven simulation directory mimics cloud SDK interactions locally, while the policies folder stores predefined security rules.
 
 ## Technology Stack
 
